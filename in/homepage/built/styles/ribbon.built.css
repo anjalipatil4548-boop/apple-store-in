@@ -1,0 +1,425 @@
+@keyframes ribbon-drop {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.ribbon {
+	--ribbon-link-inline-color: inherit;
+	overflow: hidden;
+}
+
+.ribbon-content-wrapper {
+	text-align: center;
+}
+
+.ribbon-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: var(--ribbon-content-width);
+	min-width: var(--ribbon-content-minimum-width);
+}
+
+.ribbon-link {
+	white-space: nowrap;
+}
+
+.ribbon-link:focus {
+	outline: 2px solid var(--sk-focus-color, #0071e3);
+	outline-offset: var(--sk-focus-offset, 1px);
+}
+
+.ribbon-link-inline, .ribbon-link-inline:link {
+	text-decoration: underline;
+}
+
+.ribbon-link-inline {
+	color: var(--ribbon-link-inline-color);
+}
+
+.ribbon {
+	font-size: 14px;
+	line-height: 1.4285914286;
+	font-weight: 400;
+	letter-spacing: -0.016em;
+	font-family:
+		"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
+		sans-serif;
+}
+
+.ribbon:lang(ar) {
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro AR", "SF Pro AR Text", "SF Pro Text", "SF Pro Gulf",
+		"SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(ja) {
+	line-height: 1.4;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro",
+		"Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ Pro W3",
+		"Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª", "Meiryo",
+		"Ã¯Â¼Â­Ã¯Â¼Â³ Ã¯Â¼Â°Ã£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(ko) {
+	line-height: 1.5714285714;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim",
+		"MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica",
+		"Arial", sans-serif;
+}
+
+.ribbon:lang(zh) {
+	line-height: 1.5;
+	letter-spacing: 0em;
+}
+
+.ribbon:lang(th) {
+	line-height: 1.3571828571;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(zh-CN) {
+	font-family:
+		"SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(zh-HK) {
+	font-family:
+		"SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(zh-MO) {
+	font-family:
+		"SF Pro HK", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang HK",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon:lang(zh-TW) {
+	font-family:
+		"SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon {
+	--ribbon-link-color: rgb(0, 102, 204);
+	--ribbon-focus-color: #0071e3;
+	--ribbon-text-color: rgb(29, 29, 31);
+	--ribbon-background-color: rgb(245, 245, 247);
+	--ribbon-content-padding-top: 16px;
+	--ribbon-content-padding-bottom: var(--ribbon-content-padding-top);
+	--ribbon-content-width: 83.33333%;
+	--ribbon-content-minimum-width: 320px;
+	width: var(--ribbon-width);
+	padding-top: var(--ribbon-padding-top);
+	padding-bottom: var(--ribbon-padding-bottom);
+}
+
+.ribbon-content-wrapper {
+	background-color: var(--ribbon-background-color);
+	backdrop-filter: blur(var(--ribbon-background-blur));
+	padding-top: var(--ribbon-content-padding-top);
+	padding-bottom: var(--ribbon-content-padding-bottom);
+	border-radius: var(--ribbon-border-radius);
+}
+
+.ribbon-content {
+	color: var(--ribbon-text-color);
+}
+
+.ribbon-link {
+	color: var(--ribbon-link-color);
+}
+
+.ribbon-link:focus {
+	outline-color: var(--ribbon-focus-color);
+}
+
+.ribbon-elevated {
+	font-size: 17px;
+	line-height: 1.4705882353;
+	font-weight: 400;
+	letter-spacing: -0.022em;
+	font-family:
+		"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
+		sans-serif;
+}
+
+.ribbon-elevated:lang(ar) {
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro AR", "SF Pro AR Text", "SF Pro Text", "SF Pro Gulf",
+		"SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(ja) {
+	line-height: 1.3529611765;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro",
+		"Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ Pro W3",
+		"Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª", "Meiryo",
+		"Ã¯Â¼Â­Ã¯Â¼Â³ Ã¯Â¼Â°Ã£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(ko) {
+	line-height: 1.5882352941;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim",
+		"MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica",
+		"Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(zh) {
+	letter-spacing: 0em;
+}
+
+.ribbon-elevated:lang(th) {
+	line-height: 1.3529611765;
+	letter-spacing: 0em;
+	font-family:
+		"SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(zh-CN) {
+	font-family:
+		"SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(zh-HK) {
+	font-family:
+		"SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(zh-MO) {
+	font-family:
+		"SF Pro HK", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang HK",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated:lang(zh-TW) {
+	font-family:
+		"SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC",
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.ribbon-elevated {
+	--ribbon-content-padding-top: 24px;
+}
+
+.ribbon-elevated.ribbon-inset {
+	--ribbon-border-radius: 12px;
+}
+
+.ribbon-blue {
+	--ribbon-background-color: rgb(0, 113, 227);
+	--ribbon-text-color: rgb(245, 245, 247);
+	--ribbon-link-color: rgb(245, 245, 247);
+	--ribbon-focus-color: rgb(255, 255, 255);
+}
+
+.ribbon-variant-neutral-alpha {
+	--ribbon-background-color: rgba(245, 245, 247, 0.8);
+}
+
+.ribbon-variant-neutral-alt {
+	--ribbon-background-color: rgb(255, 255, 255);
+}
+
+.ribbon-blue-to-default {
+	--ribbon-background-color: rgb(245, 245, 247);
+	--ribbon-background-color-initial: rgb(0, 113, 227);
+	--ribbon-text-color: rgb(29, 29, 31);
+	--ribbon-text-color-initial: rgb(245, 245, 247);
+	--ribbon-link-color: rgb(0, 102, 204);
+	--ribbon-link-color-initial: rgb(245, 245, 247);
+}
+
+@keyframes ribbon-animate-background {
+	0% {
+		background-color: var(--ribbon-background-color-initial);
+	}
+
+	100% {
+		background-color: var(--ribbon-background-color);
+	}
+}
+
+.ribbon-animate-color .ribbon-content-wrapper {
+	background-color: var(--ribbon-background-color-initial);
+	animation: ribbon-animate-background 0.8s cubic-bezier(0.42, 0, 0.58, 1)
+		1.6s forwards;
+}
+
+@media (prefers-reduced-motion) {
+	.ribbon-animate-color .ribbon-content-wrapper {
+		background-color: var(--ribbon-background-color);
+		animation: none;
+	}
+}
+
+@keyframes ribbon-animate-text-color {
+	0% {
+		color: var(--ribbon-text-color-initial);
+	}
+
+	100% {
+		color: var(--ribbon-text-color);
+	}
+}
+
+.ribbon-animate-color .ribbon-content {
+	color: var(--ribbon-text-color-initial);
+	animation: ribbon-animate-text-color 0.8s cubic-bezier(0.42, 0, 0.58, 1)
+		1.6s forwards;
+}
+
+@media (prefers-reduced-motion) {
+	.ribbon-animate-color .ribbon-content {
+		color: var(--ribbon-text-color);
+		animation: none;
+	}
+}
+
+@keyframes ribbon-animate-link-color {
+	0% {
+		color: var(--ribbon-link-color-initial);
+	}
+
+	100% {
+		color: var(--ribbon-link-color);
+	}
+}
+
+.ribbon-animate-color .ribbon-link {
+	color: var(--ribbon-link-color-initial);
+	animation: ribbon-animate-link-color 0.8s cubic-bezier(0.42, 0, 0.58, 1)
+		1.6s forwards;
+}
+
+@media (prefers-reduced-motion) {
+	.ribbon-animate-color .ribbon-link {
+		color: var(--ribbon-link-color);
+		animation: none;
+	}
+}
+
+.ribbon-drop-wrapper {
+	animation: ribbon-drop 0.8s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+@media (prefers-reduced-motion) {
+	.ribbon-drop-wrapper {
+		animation: none;
+	}
+}
+
+.ribbon-inset {
+	--ribbon-width: 83.33333%;
+	--ribbon-padding-top: 16px;
+	--ribbon-border-radius: 10px;
+	margin: 0 auto;
+}
+
+.ribbon-inset .ribbon-content {
+	width: var(--ribbon-width);
+}
+
+@media (max-width: 734px) {
+	.ribbon-inset {
+		--ribbon-width: 87.5%;
+	}
+
+	.ribbon-inset .ribbon-content {
+		min-width: var(--ribbon-width);
+	}
+}
+
+.ribbon-blur {
+	--ribbon-background-blur: 20px;
+}
+
+.theme-dark .ribbon, .theme-dark.ribbon {
+	--ribbon-text-color: rgb(245, 245, 247);
+	--ribbon-background-color: rgb(29, 29, 31);
+	--ribbon-link-color: rgb(41, 151, 255);
+	--ribbon-focus-color: #0071e3;
+}
+
+.theme-dark .ribbon-blue, .theme-dark.ribbon-blue {
+	--ribbon-background-color: rgb(0, 113, 227);
+	--ribbon-text-color: rgb(245, 245, 247);
+	--ribbon-link-color: rgb(245, 245, 247);
+	--ribbon-focus-color: rgb(255, 255, 255);
+}
+
+.theme-dark .ribbon-variant-neutral-alpha, .theme-dark.ribbon-variant-neutral-alpha {
+	--ribbon-background-color: rgba(29, 29, 31, 0.8);
+}
+
+.theme-dark .ribbon-variant-neutral-alt, .theme-dark.ribbon-variant-neutral-alt {
+	--ribbon-background-color: rgb(0, 0, 0);
+}
+
+.theme-dark .ribbon-blue-to-default, .theme-dark.ribbon-blue-to-default {
+	--ribbon-background-color: rgb(29, 29, 31);
+	--ribbon-text-color: rgb(245, 245, 247);
+	--ribbon-link-color: rgb(41, 151, 255);
+}
+
+.theme-light .ribbon, .theme-light.ribbon {
+	--ribbon-text-color: rgb(29, 29, 31);
+	--ribbon-background-color: rgb(255, 255, 255);
+	--ribbon-link-color: rgb(0, 102, 204);
+	--ribbon-focus-color: #0071e3;
+}
+.diwali-overview-ribbon.theme-light .ribbon {
+	--ribbon-background-color: rgb(245, 245, 247);
+}
+.theme-light .ribbon-blue, .theme-light.ribbon-blue {
+	--ribbon-background-color: rgb(0, 113, 227);
+	--ribbon-text-color: rgb(245, 245, 247);
+	--ribbon-link-color: rgb(245, 245, 247);
+	--ribbon-focus-color: rgb(255, 255, 255);
+}
+
+.theme-light .ribbon-variant-neutral-alpha, .theme-light.ribbon-variant-neutral-alpha {
+	--ribbon-background-color: rgba(245, 245, 247, 0.8);
+}
+
+.theme-light .ribbon-variant-neutral-alt, .theme-light.ribbon-variant-neutral-alt {
+	--ribbon-background-color: rgb(255, 255, 255);
+}
+
+.theme-light .ribbon-blue-to-default, .theme-light.ribbon-blue-to-default {
+	--ribbon-background-color: rgb(245, 245, 247);
+	--ribbon-text-color: rgb(29, 29, 31);
+	--ribbon-link-color: rgb(0, 102, 204);
+}
+
+.ribbon {
+	--ribbon-background-color: #fff;
+}
+
+.ribbon-blue-to-default {
+	--ribbon-background-color: #fff;
+}

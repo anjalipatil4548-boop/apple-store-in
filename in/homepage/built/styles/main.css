@@ -1,0 +1,64 @@
+/* Endless enterntainment background fix - START */
+
+#tv-gallery {
+	background-color: #f5f5f7;
+}
+
+/* Endless enterntainment background fix - END */
+br.large {
+	display: block;
+}
+
+@media (max-width: 1068px) {
+	br.large {
+		display: none;
+	}
+}
+
+@media (max-width: 734px) {
+	br.large {
+		display: none;
+	}
+}
+
+br.medium {
+	display: none;
+}
+
+@media (max-width: 1068px) {
+	br.medium {
+		display: block;
+	}
+}
+
+@media (max-width: 734px) {
+	br.medium {
+		display: none;
+	}
+}
+
+br.small {
+	display: none;
+}
+
+@media (max-width: 1068px) {
+	br.small {
+		display: none;
+	}
+}
+
+@media (max-width: 734px) {
+	br.small {
+		display: block;
+	}
+}
+
+@media (max-width: 450px) {
+	br.small.hide-x-small {
+		display: none;
+	}
+
+	[data-tile-id="se-airpods"] .typography-tile-subhead {
+		max-width: calc(100% - 40px);
+	}
+}
