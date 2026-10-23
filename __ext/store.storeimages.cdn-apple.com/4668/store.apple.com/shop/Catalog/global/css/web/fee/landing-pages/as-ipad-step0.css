@@ -1,0 +1,86 @@
+/*
+    iPad Step0 CSS
+    ===============================================
+*/
+
+html.no-touch .rf-cards-scroller .paddlenav-arrow {
+    transition: transform 0.5s ease-in, opacity 0.7s cubic-bezier(0.15, 0, 0.2, 1) 0.1s;
+}
+
+html.no-touch .rf-cards-scroller:hover .paddlenav-arrow:not([disabled]) {
+    transition-duration: 0.5s;
+}
+
+html.no-touch .rf-cards-scroller:hover .paddlenav-arrow:hover:not([disabled]) {
+    transition-duration: 0.5s;
+}
+
+html.no-touch .rf-cards-scroller:hover .paddlenav-arrow:active:not([disabled]) {
+    transition-duration: 0.5s;
+}
+
+html.as-keyboarduser .rf-cards-scroller .paddlenav-arrow:focus {
+    transition-duration: 0.5s;
+}
+
+html.as-keyboarduser .rf-cards-scroller .paddlenav-arrow:active {
+    transition-duration: 0.5s;
+}
+
+.rf-digitalmat-inlinetabnav-tabcontent-container {
+    padding-bottom: 33px;
+}
+
+.rf-digitalmat-explorelink {
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .rf-digitalmat-inlinetabnav-tabcontent-container {
+        padding-bottom: 0;
+    }
+
+    .rf-digitalmat-productdetails {
+        padding-bottom: 14px;
+    }
+
+    .rf-digitalmat-explorelink {
+        padding-top: 0;
+    }
+}
+
+.rf-ccard-withvideo .rf-ccard-content-desc {
+    width: auto;
+    align-self: center;
+}
+
+.rf-ccard-withvideo div:empty {
+    height: 1px;
+}
+
+/* line-height for KO support */
+.rf-digitalmat-inlinetabs .rf-digitalmat-inlinetabnav:lang(ko) {
+    min-height: 2.3529411765rem;
+}
+
+.rf-digitalmat-tabnav-scroller-crop:lang(ko) {
+    height: 2.9411764706rem;
+}
+
+.rf-digitalmat-overlay .rf-digitalmat-violatortext {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .rf-digitalmat-overlay .as-dynamicrep-illustrative-container .rc-accordion-title,
+    .rf-digitalmat-overlay .rc-overlay-footer .rc-repexample,
+    .rf-digitalmat-overlay .rc-repexample .as-dynamicrep-row-header,
+    .rf-digitalmat-overlay .rc-repexample .rc-repexample-financetitle,
+    .rf-digitalmat-overlay .rc-repexample .rc-repexample-illustrative-header {
+        color: #6E6E73;
+    }
+}
+
+.rf-ccard-content-desc .rf-ccard-content-descprice b {
+    font-weight: 600;
+}
